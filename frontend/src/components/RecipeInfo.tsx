@@ -3,14 +3,7 @@ import RecipeService from '../services/RecipeService'
 import { useParams } from 'react-router-dom'
 import { getIngredients } from '../utils/recipe'
 import { Link } from 'react-router-dom'
-
-interface Recipe {
-    strMealThumb: string
-    strMeal: string
-    strArea: string
-    strInstructions: string
-    strCategory: string
-}
+import { Recipe } from '../types'
 
 const RecipeInfo = () => {
     const [recipeInfo, setRecipeInfo] = useState<Recipe | null>(null)

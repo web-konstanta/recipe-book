@@ -3,3 +3,12 @@ export type RouteType = {
 	component: ComponentType,
 	exact: boolean
 }
+
+export type Recipe = {
+	idMeal: string
+	strMealThumb: string
+	strMeal: string
+	strArea: string
+	strInstructions: string
+	strCategory: string
+}

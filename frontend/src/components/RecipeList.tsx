@@ -1,12 +1,7 @@
 import { useEffect, useState } from 'react'
 import RecipeService from '../services/RecipeService'
 import { Link, useSearchParams } from 'react-router-dom'
-
-interface Recipe {
-    idMeal: string
-    strMealThumb: string
-    strMeal: string
-}
+import { Recipe } from '../types'
 
 const RecipesList = () => {
     const [searchParams] = useSearchParams()

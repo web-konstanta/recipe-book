@@ -23,10 +23,10 @@ To get started with a project, follow these steps:
 ### 4. Set env variables
 
 <div>cd frontend</div>
-<div>cp .env.example .env</div>
+<div>cp .env.example .env ( Paste CLIENT_URL=http://localhost:3000 API_URL=https://www.themealdb.com/api/json/v1/1/ )</div>
 
 <div>cd backend</div>
-<div>cp .env.example .env</div>
+<div>cp .env.example .env ( VITE_API_URL=http://localhost:5000 )</div>
 
 ### 5. Run backend & frontend
 

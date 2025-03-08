@@ -8,7 +8,7 @@ export class RecipeService {
 	constructor(private readonly httpService: HttpService) { }
 
 	async getAvailableRecipes(search?: string, ingredient?: string, country?: string, category?: string) {
-		let url = `${this.apiUrl}/search.php`;
+		let url = `${this.apiUrl}/search.php?s=`;
 
 		if (search) {
 			url = `${this.apiUrl}/search.php?s=${search}`

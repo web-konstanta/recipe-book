@@ -1,6 +1,8 @@
-import Recipes from "../pages/Recipes"
+import Index from "../pages/Index"
+import Show from "../pages/Show"
 import { RouteType } from "../types"
 
 export const recipesRoutes: Array<RouteType> = [
-	{ path: '/', component: Recipes, exact: true }
+	{ path: '/', component: Index, exact: true },
+	{ path: '/recipe/:id', component: Show, exact: true }
 ]
